@@ -1,4 +1,4 @@
-package testing;
+package testing.GET;
 
 import io.restassured.RestAssured;
 import io.restassured.specification.RequestSpecification;

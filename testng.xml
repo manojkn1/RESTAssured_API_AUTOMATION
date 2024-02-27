@@ -1,18 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
-    <test verbose="2" preserve-order="true" name="C:/Users/Admin/IdeaProjects/API_AUTOMATION/src/test/java/testing">
+    <test verbose="2" preserve-order="true" name="C:/Users/Admin/IdeaProjects/API_AUTOMATION">
         <classes>
-            <class name="testing.GetRequestNonBDDTestNG">
+            <class name="testing.DELETE.DeleteNonBDD">
+                <methods>
+                    <include name="deleteUser"/>
+                </methods>
+            </class>
+            <class name="testing.GET.GetRequestNonBDDTestNG">
                 <methods>
                     <include name="getSingleBookingPositive"/>
                     <include name="getSingleBookingNegetive"/>
                     <include name="getSingleBookingNegetive2"/>
                 </methods>
             </class>
-            <class name="testing.PostRequestNonBDDTestNG">
+            <class name="testing.POST.PostRequestNonBDDTestNG">
                 <methods>
                     <include name="createNewUserPositive"/>
+                </methods>
+            </class>
+            <class name="testing.POST.PostRequestNonBDDToken">
+                <methods>
+                    <include name="getToken"/>
+                </methods>
+            </class>
+            <class name="testing.PUT.NonBDDPUT">
+                <methods>
+                    <include name="putRequest"/>
                 </methods>
             </class>
         </classes>
